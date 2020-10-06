@@ -27,3 +27,32 @@ If we increase it manually, nothing interesting happens. But if we decrease it, 
 ```                
 
 So, the simplest way to clear the array is: `arr.length = 0;`.
+
+
+
+# Summary
+
+Array is a special kind of object, suited to storing and managing ordered data items.
+- The declaration:
+
+```javascript
+                // square brackets (usual)
+                let arr = [item1, item2...];
+                
+                // new Array (exceptionally rare)
+                let arr = new Array(item1, item2...);
+```
+
+  The call to `new Array(number)` creates an array with the given length, but without elements.
+  - The length property is the array length or, to be precise, its last numeric index plus one. It is auto-adjusted by array methods.
+  
+  - If we shorten length manually, the array is truncated.
+  
+ We can use an array as a deque with the following operations:
+ - push(...items) adds items to the end.
+ 
+ - pop() removes the element from the end and returns it.
+ 
+ - shift() removes the element from the beginning and returns it.
+ 
+ - unshift(...items) adds items to the beginning.
