@@ -39,7 +39,9 @@ That allows to write shorter functions:
 let arr = [3, 2, 10, 5];
 
 arr.sort( function(a, b) { return a - b; } ); // return sorted array
+```
 
+## Arrow function for the best ->
 
 ```javascript
 let arr = [3, 2, 10, 5];
