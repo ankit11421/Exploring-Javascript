@@ -28,3 +28,21 @@ The function should compare two arbitrary values and return:
     if ( a < b ) return -1;
     });
 ```
+
+## A comparison function may return any number
+
+Actually, a comparison function is only required to return a positive number to say “greater” and a negative number to say “less”.
+
+That allows to write shorter functions:
+
+```javascript
+let arr = [3, 2, 10, 5];
+
+arr.sort( function(a, b) { return a - b; } ); // return sorted array
+
+
+```javascript
+let arr = [3, 2, 10, 5];
+
+arr.sort( (a, b) => a- b ); // return sorted array
+
